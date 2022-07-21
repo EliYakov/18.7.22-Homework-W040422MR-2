@@ -1,9 +1,15 @@
 const nameInput = document.getElementById("name-input");
 const numberInput = document.getElementById("number-input");
 const Card = document.getElementById("card");
+const colorInput = document.getElementById("color-input");
+
+function setUserFavoriteColor(color) {
+  Card.style.backgroundColor = color;
+}
 
 function onBtnClick() {
   checkAge();
+  setUserFavoriteColor(colorInput.value);
 
   Card.innerHTML +=
     `<div class="card-body">
