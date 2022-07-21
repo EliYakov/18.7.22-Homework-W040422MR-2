@@ -2,9 +2,16 @@ const nameInput = document.getElementById("name-input");
 const numberInput = document.getElementById("number-input");
 const Card = document.getElementById("card");
 const colorInput = document.getElementById("color-input");
+const countryInput = document.getElementById("country-input");
 
 function setUserFavoriteColor(color) {
   Card.style.backgroundColor = color;
+}
+
+function resetInputs() {
+  nameInput.value = "";
+  numberInput.value = "";
+  colorInput.value = "#ffffff";
 }
 
 function onBtnClick() {
@@ -19,7 +26,9 @@ function onBtnClick() {
     nameInput.value +
     ` and I'am ` +
     numberInput.value +
-    ` years old
+    ` years old and I'am from ` +
+    countryInput.value +
+    `
     </p>
   </div>`;
 }
