@@ -48,9 +48,12 @@ function onBtnClick() {
 
 function checkAge() {
   if (nameInput.value.length <= 1) {
+    alert("A letter cannot be a full name!");
     Card = "";
   }
+
   if (numberInput.value <= 0) {
+    alert("You weren't even born yet !");
     Card = "";
   }
 }
