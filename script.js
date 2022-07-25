@@ -17,7 +17,6 @@ function resetInputs() {
 }
 
 function onBtnClick() {
-  setGender();
   checkAge();
   setUserFavoriteColor(colorInput.value);
 
@@ -32,6 +31,8 @@ function onBtnClick() {
   Card.innerHTML +=
     `<div class="card-body">
     <h5 class="card-title">` +
+    nameInput.value +
+    ` ` +
     setGender() +
     `</h5>
     <p class="card-text">
